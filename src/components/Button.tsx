@@ -32,7 +32,12 @@ interface ButtonProps {
   inverse?: boolean;
 }
 
-const Button = ({ secondary, big, inverse, ...props }: ButtonProps): React.ReactNode => {
+const Button: React.FunctionComponent<ButtonProps> = ({
+  secondary,
+  big,
+  inverse,
+  ...props
+}: ButtonProps): JSX.Element => {
   return <StyledButton secondary={secondary} big={big} inverse={inverse} {...props} />;
 };
 
