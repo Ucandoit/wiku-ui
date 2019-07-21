@@ -12,6 +12,7 @@
     "prettier/@typescript-eslint"
   ],
   "rules": {
+    "react/prop-types": 0, // No need to do props validation in TypeScript
     "@typescript-eslint/array-type": ["error", "array-simple"],
     "@typescript-eslint/explicit-member-accessibility": ["off"],
     "@typescript-eslint/no-non-null-assertion": ["off"],

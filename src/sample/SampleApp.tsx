@@ -1,9 +1,10 @@
 import * as React from 'react';
-import { Button } from '../';
+import { Button, Navbar } from '../';
 
 const SampleApp: React.FunctionComponent = (): JSX.Element => {
   return (
     <React.Fragment>
+      <Navbar />
       <Button>Test</Button>
       <Button big>Test</Button>
       <Button secondary>Test</Button>
